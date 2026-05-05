@@ -295,6 +295,9 @@
       transition: 0.2s;
       border: 1px solid rgba(255, 245, 230, 0.9);
       cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .piece-card:hover {
       transform: translateY(-4px);
@@ -309,12 +312,23 @@
       font-weight: 700;
       font-size: 0.95rem;
       color: #2a4a22;
+      margin-top: 8px;
+      margin-bottom: 6px;
     }
     .piece-price {
       font-weight: 600;
       color: #4a6e3a;
       font-size: 0.85rem;
       margin-top: 8px;
+    }
+    .piece-image {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 8px;
+      border: 2px solid #b8cfaa;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     .explore-link {
       text-align: right;
@@ -524,7 +538,7 @@
         </div>
       </div>
 
-      <!-- RIGHT: KACE JEWELRY BOX with kace collection -->
+      <!-- RIGHT: KACE JEWELRY BOX with salome8.jfif added to Ivory Lace Ring -->
       <div class="kace-jewelry-box">
         <h3>kace jewelry <span class="badge-count">kace collection</span></h3>
         
@@ -548,7 +562,7 @@
         </div>
         <div class="lace-sub">— capsule collection: bracelets, necklaces & lace heirlooms —</div>
         
-        <!-- 6-piece grid with prices -->
+        <!-- 6-piece grid with prices - Ivory Lace Ring now has salome8.jfif as image -->
         <div class="lace-grid-6">
           <div class="piece-card">
             <div class="piece-emoji">🌿✨</div>
@@ -569,7 +583,7 @@
             <div class="piece-price">$478</div>
           </div>
           <div class="piece-card">
-            <div class="piece-emoji">🕯️🤍</div>
+            <img src="salome8.jfif" alt="Ivory Lace Ring - Salome Signature" class="piece-image" onerror="this.src='https://placehold.co/80x80/e8f0e0/4a6e3a?text=KACE'">
             <h4>Ivory Lace Ring</h4>
             <p>Open band, antique pattern</p>
             <div class="piece-price">$199</div>
@@ -593,7 +607,7 @@
       </div>
     </div>
 
-    <!-- values grid - with salome9.jfif added to innovation box -->
+    <!-- values grid - with salome9.jfif in innovation box -->
     <div class="values-grid">
       <div class="value-card">
         <img src="salome9.jfif" alt="Kace Innovation - Salome Signature" class="value-image" onerror="this.src='https://placehold.co/400x300/e8f0e0/4a6e3a?text=Innovation'">
